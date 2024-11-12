@@ -1,0 +1,20 @@
+{
+  "nodeModulesDir": "auto",
+  "exclude": ["./app"],
+  "tasks": {
+    "start": "deno -A main.ts",
+    "dev": "deno -A --watch main.ts"
+  },
+  "imports": {
+    "@hono/hono": "jsr:@hono/hono@^4.6.8",
+    "@std/datetime": "jsr:@std/datetime@^0.225.2",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.2",
+    "@std/fmt": "jsr:@std/fmt@^1.0.3",
+    "@types/pdfkit": "npm:@types/pdfkit@^0.13.5",
+    "envalid": "npm:envalid@^8.0.0",
+    "octokit": "npm:octokit@^4.0.2",
+    "pdfkit": "npm:pdfkit@^0.15.1",
+    "sequelize": "npm:sequelize@^6.37.5",
+    "sqlite3": "npm:sqlite3@^5.1.7"
+  }
+}
