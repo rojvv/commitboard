@@ -33,7 +33,7 @@ export const Commit = sequelize.define("Commit", {
     {
       type: "UNIQUE",
       name: "commit_uniq",
-      fields: ["repository", "id"],
+      fields: ["repository", "id", "branch"],
     },
   ],
 });
