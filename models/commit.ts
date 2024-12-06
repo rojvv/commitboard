@@ -28,12 +28,4 @@ export const Commit = sequelize.define("Commit", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
-}, {
-  indexes: [
-    {
-      type: "UNIQUE",
-      name: "commit_uniq",
-      fields: ["repository", "id", "branch"],
-    },
-  ],
 });
